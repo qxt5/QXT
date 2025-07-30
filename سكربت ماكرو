@@ -1,0 +1,12 @@
+$e::
+SendInput, {e down}  ; الضغط على e أولاً
+Sleep, 1  ; تأخير قصير
+SendInput, {p down}  ; ثم الضغط على p
+While GetKeyState("e", "P")
+    Continue
+SendInput, {e up}  ; رفع الضغط عن e
+Sleep, 1  ; تأخير قصير
+SendInput, {p up}  ; ثم رفع الضغط عن p
+Return
+برنامج الماكرو
+https://www.autohotkey.com/
